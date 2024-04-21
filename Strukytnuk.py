@@ -59,6 +59,9 @@ def drawTriangle(side1, side2, side3, angle1, angle2, angle3):
   writer.left(angle2)
   writer.forward(side3)
   writer.left(angle3)
+  writer.hideturtle()
   
 checkTriangle()
-  
+style = ('Courier', 15, 'italic')
+turtle.write(" Turtle накреслила\n Вам ваш трикутник", font=style, align='right')
+turtle.title('Ваш трикутник')  
